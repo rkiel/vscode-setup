@@ -2,6 +2,12 @@
 
 [https://code.visualstudio.com](https://code.visualstudio.com/)
 
+### Add To Path
+
+```bash
+echo "source ~/GitHub/rkiel/vscode-starter/vs-code.bash" >> ~/GitHub/rkiel/osx-setup/dotfiles/bash_profile
+```
+
 ### Install Extensions
 
 - VSCodeVim
