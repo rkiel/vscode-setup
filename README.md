@@ -10,8 +10,15 @@ echo "source ~/GitHub/rkiel/vscode-starter/vs-code.bash" >> ~/GitHub/rkiel/osx-s
 
 ### Install Extensions
 
+Prettier
+
 ```bash
 code --install-extension esbenp.prettier-vscode
+```
+
+Vim
+
+```bash
 code --install-extension vscodevim.vim
 ```
 
