@@ -2,5 +2,8 @@
   "editor.fontSize": 14,
   "editor.tabSize": 2,
   "editor.formatOnSave": true,
-  "editor.renderIndentGuides": false
+  "editor.renderIndentGuides": false,
+  "prettier.printWidth": 80,
+  "prettier.singleQuote": true,
+  "prettier.useTabs": false
 }
