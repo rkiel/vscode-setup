@@ -23,13 +23,19 @@ code --help
 
 ### Install Extensions
 
-Prettier
+Prettier - Format JavaScript
 
 ```bash
 code --install-extension esbenp.prettier-vscode
 ```
 
-Vim
+Vetur - Vue tooling
+
+```bash
+code --install-extension octref.vetur
+```
+
+Vim - Vim emulation
 
 ```bash
 code --install-extension vscodevim.vim
