@@ -9,10 +9,12 @@ mkdir -p ~/GitHub/rkiel && $_
 git clone https://github.com/rkiel/vscode-setup.git
 ```
 
-### Add To Path
+### Add CLI To Path
+
+macOS
 
 ```bash
-echo "source ~/GitHub/rkiel/vscode-setup/vs-code.bash" >> ~/GitHub/rkiel/osx-setup/dotfiles/bash_profile
+echo "source ~/GitHub/rkiel/vscode-setup/vs-code.bash" >> ~/.bash_profile
 ```
 
 Test the update. You may have to open a new shell window.
