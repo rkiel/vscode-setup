@@ -5,7 +5,7 @@
 ### Add To Path
 
 ```bash
-echo "source ~/GitHub/rkiel/vscode-starter/vs-code.bash" >> ~/GitHub/rkiel/osx-setup/dotfiles/bash_profile
+echo "source ~/GitHub/rkiel/vscode-setup/vs-code.bash" >> ~/GitHub/rkiel/osx-setup/dotfiles/bash_profile
 ```
 
 ### Install Extensions
