@@ -7,6 +7,7 @@
 ```bash
 mkdir -p ~/GitHub/rkiel && cd $_
 git clone https://github.com/rkiel/vscode-setup.git
+cd vscode-setup
 ```
 
 ### Add The `code` CLI To Path
@@ -46,8 +47,9 @@ code --install-extension vscodevim.vim
 ### Establish User Settings
 
 ```bash
-mkdir -p ~/Library/Application\ Support/Code/User && cd $_
+mkdir -p ~/Library/Application\ Support/Code/User && pushd "$_"
 ln -nfs ~/GitHub/rkiel/vscode-setup/settings.json .
+popd
 ```
 
 ### Enable Vim Key Repeat
