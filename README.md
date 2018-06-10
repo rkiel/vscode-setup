@@ -5,7 +5,7 @@
 ### Clone Repository
 
 ```bash
-mkdir -p ~/GitHub/rkiel && $_
+mkdir -p ~/GitHub/rkiel && cd $_
 git clone https://github.com/rkiel/vscode-setup.git
 ```
 
@@ -43,10 +43,10 @@ Vim - Vim emulation
 code --install-extension vscodevim.vim
 ```
 
-### Copy User Settings
+### Establish User Settings
 
 ```bash
-cd ~/Library/Application\ Support/Code/User
+mkdir -p ~/Library/Application\ Support/Code/User && cd $_
 ln -nfs ~/GitHub/rkiel/vscode-setup/settings.json .
 ```
 
