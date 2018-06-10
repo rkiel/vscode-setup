@@ -2,6 +2,13 @@
 
 [https://code.visualstudio.com](https://code.visualstudio.com/)
 
+### Clone Repository
+
+```bash
+mkdir -p ~/GitHub/rkiel && $_
+git clone https://github.com/rkiel/vscode-setup.git
+```
+
 ### Add To Path
 
 ```bash
