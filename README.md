@@ -38,8 +38,8 @@ code --install-extension vscodevim.vim
 ### Copy User Settings
 
 ```bash
-mkdir -p ~/Library/Application\ Support/Code/User
-cp settings.json ~/Library/Application\ Support/Code/User
+cd ~/Library/Application\ Support/Code/User
+ln -nfs ~/GitHub/rkiel/vscode-setup/settings.json .
 ```
 
 ### Enable Vim Key Repeat
