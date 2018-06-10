@@ -9,7 +9,7 @@ mkdir -p ~/GitHub/rkiel && $_
 git clone https://github.com/rkiel/vscode-setup.git
 ```
 
-### Add CLI To Path
+### Add `code` CLI To Path
 
 macOS
 
