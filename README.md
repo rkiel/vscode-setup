@@ -1,6 +1,15 @@
 ### Install Visual Studio Code
 
-[https://code.visualstudio.com](https://code.visualstudio.com/)
+* Browse to [Visual Studio Code Home Page](https://code.visualstudio.com/)
+* Click **Download**
+* Unpack download file
+  * macOS
+    * Go to **Downloads** and double click **VSCode-darwin-stable.zip** (Finder)
+    * `cd ~/Downloads && unzip VSCode-darwin-stable.zip` (Terminal)
+* Install Visual Studio Code
+  * macOS
+    * Move **Visual Studio Code** to **Applications** (Finder)
+    * `mv ~/Downloads/'Visual Studio Code'.app /Applications` (Terminal)
 
 ### Clone Repository
 
@@ -47,7 +56,7 @@ code --install-extension vscodevim.vim
 ### Establish User Settings
 
 ```bash
-mkdir -p ~/Library/Application\ Support/Code/User && pushd "$_"
+mkdir -p ~/Library/'Application Support'/Code/User && pushd "$_"
 ln -nfs ~/GitHub/rkiel/vscode-setup/settings.json .
 popd
 ```
