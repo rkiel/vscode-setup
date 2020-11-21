@@ -1,0 +1,23 @@
+REPO="~/GitHub/rkiel/vscode-setup"
+
+if [ -d "/Applications" ] ; then
+  if [ "$1" == "zsh" ] ; then
+    FILE=~/.zprofile
+    echo                                    >> $FILE
+    echo "source ${REPO}/dotfiles/zprofile" >> $FILE
+    source ${FILE}
+  else
+    FILE=~/.bash_profile
+    echo                                        >> $FILE
+    echo "source ${REPO}/dotfiles/bash_profile" >> $FILE
+    source ${FILE}
+  fi
+  code --install-extension esbenp.prettier-vscode
+  code --install-extension vscodevim.vim
+  code --install-extension vscode-icons-team.vscode-icons
+  code --install-extension dbaeumer.vscode-eslint
+  mkdir -p "~/Library/Application Support/Code/User" && pushd "$_"
+  ln -nfs ${REPO}/settings.json .
+  popd
+  defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false
+fi
