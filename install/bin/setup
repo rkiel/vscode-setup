@@ -2,9 +2,14 @@ REPO="~/GitHub/rkiel/vscode-setup"
 
 if [ -d "/Applications" ] ; then
   if [ "$1" == "zsh" ] ; then
-    FILE=~/.zprofile
-    echo                                    >> $FILE
-    echo "source ${REPO}/dotfiles/zprofile" >> $FILE
+#    FILE=~/.zprofile
+#    echo                                    >> $FILE
+#    echo "source ${REPO}/dotfiles/zprofile" >> $FILE
+#    source ${FILE}
+
+    FILE=~/.zshrc
+    echo                                 >> $FILE
+    echo "source ${REPO}/dotfiles/zshrc" >> $FILE
     source ${FILE}
   else
     FILE=~/.bash_profile
