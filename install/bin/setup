@@ -8,20 +8,22 @@ if [ -d "/Applications" ] ; then
 #    source ${FILE}
 
     FILE=~/.zshrc
-    echo                                 >> $FILE
-    echo "source ${REPO}/dotfiles/zshrc" >> $FILE
+    echo                                         >> $FILE
+    echo "VSCODE_SETUP=${REPO}"                  >> $FILE
+    echo 'source ${VSCODE_SETUP}/dotfiles/zshrc' >> $FILE
     source ${FILE}
   else
     FILE=~/.bash_profile
-    echo                                        >> $FILE
-    echo "source ${REPO}/dotfiles/bash_profile" >> $FILE
+    echo                                                >> $FILE
+    echo "VSCODE_SETUP=${REPO}"                         >> $FILE
+    echo 'source ${VSCODE_SETUP}/dotfiles/bash_profile' >> $FILE
     source ${FILE}
   fi
   code --install-extension esbenp.prettier-vscode
   code --install-extension vscodevim.vim
   code --install-extension vscode-icons-team.vscode-icons
   code --install-extension dbaeumer.vscode-eslint
-  mkdir -p "~/Library/Application Support/Code/User" && pushd "$_"
+  mkdir -p ~/Library/Application Support/Code/User && pushd $_
   ln -nfs ${REPO}/settings.json .
   popd
   defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false
